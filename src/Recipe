@@ -1,0 +1,13 @@
+libraries.nala {
+	sources = queue.vala watchers.vala applications.vala
+	vala-packages = gio-2.0 gee-1.0
+	packages = gee-1.0 gio-2.0
+	so-version = 0
+}
+
+programs.nala-watcher {
+	sources = nala-watcher.vala
+	libraries = nala (local) (static)
+	vala-packages = gio-2.0 gee-1.0
+	packages = gee-1.0 gio-2.0
+}

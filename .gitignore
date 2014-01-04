@@ -1,0 +1,11 @@
+*.pyc
+.built
+nala-1.0.0.tar.bz2
+nala_1.0.0.orig.tar.gz
+nala_1.0.0-0.debian.tar.gz
+nala_1.0.0-0.dsc
+nala_1.0.0-0_source.changes
+nala_1.0.0-0_amd64.deb
+nala-1.0.0.tar.gz
+nala-1.0.0.tar.xz
+nala-watcher
