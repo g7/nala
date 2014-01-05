@@ -1,3 +1,10 @@
+nala (1.0.1-1) unstable; urgency=low
+
+  * watchers: properly catch GLib.Error.
+  * debian/control: build-depend on libgee-dev and libglib2.0-dev.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Sun, 05 Jan 2014 04:07:11 +0100
+
 nala (1.0.0-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn).
