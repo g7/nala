@@ -2,6 +2,6 @@
 
 project {
 	name = nala
-	version = 1.0.1
+	version = 1.0.2
 	minimum-bake-version = 0.1
 }
