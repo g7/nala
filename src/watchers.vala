@@ -77,7 +77,12 @@ namespace Nala {
 				
 				this.file_monitor.changed.connect(
 					(trigger, wtf, event) => {
-						changed (trigger, event);
+						if ((event == FileMonitorEvent.CHANGED) ||
+							(event == FileMonitorEvent.CREATED) ||
+							(event == FileMonitorEvent.DELETED) ||
+							(event == FileMonitorEvent.MOVED)) {
+							changed (trigger, event);
+						}
 					}
 				);
 			} catch (Error e) {
