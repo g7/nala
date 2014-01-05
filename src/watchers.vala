@@ -72,13 +72,17 @@ namespace Nala {
 			
 			this.path = path;
 			this.file_object = File.new_for_path(this.path);
-			this.file_monitor = this.file_object.monitor(FileMonitorFlags.NONE, null);
-			
-			this.file_monitor.changed.connect(
-				(trigger, wtf, event) => {
-					changed (trigger, event);
-				}
-			);
+			try {
+				this.file_monitor = this.file_object.monitor(FileMonitorFlags.NONE, null);
+				
+				this.file_monitor.changed.connect(
+					(trigger, wtf, event) => {
+						changed (trigger, event);
+					}
+				);
+			} catch (Error e) {
+				stderr.printf("ERROR: Unable to create watcher for %s\n", path);
+			}
 		}
 	}
 
