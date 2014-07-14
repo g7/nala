@@ -1,3 +1,9 @@
+nala (1.0.3-1) unstable; urgency=medium
+
+  * Added pkg-config file.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Mon, 14 Jul 2014 17:30:41 +0200
+
 nala (1.0.2-1) unstable; urgency=low
 
   * Nala.Watcher: fire up the changed signal only on CHANGED, CREATED, DELETED and MOVED.
