@@ -1,13 +1,15 @@
 libraries.nala {
 	sources = queue.vala watchers.vala applications.vala
+	so-version = 0
+	compile-flags = -O2 -flto
+	link-flags = -flto -Wl,--as-needed,-soname,libnala.so.$(libraries.nala.so-version)
 	vala-packages = gio-2.0 gee-1.0
 	packages = gee-1.0 gio-2.0
-	so-version = 0
 }
 
 programs.nala-watcher {
 	sources = nala-watcher.vala
-	libraries = nala (local) (static)
+	libraries = nala (local)
 	vala-packages = gio-2.0 gee-1.0
 	packages = gee-1.0 gio-2.0
 }

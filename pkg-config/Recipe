@@ -1,0 +1,4 @@
+data.pkg-config {
+	files = nala.pc
+	install-directory = /usr/share/pkgconfig
+}
