@@ -1,3 +1,9 @@
+nala (1.0.3-3) unstable; urgency=medium
+
+  * Actually ship the pkgconfig files.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Mon, 14 Jul 2014 19:18:12 +0200
+
 nala (1.0.3-2) unstable; urgency=medium
 
   * Build-depend on valac-0.24
