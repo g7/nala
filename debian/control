@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/g7/nala
 Package: nala-dev
 Section: libdevel
 Architecture: any
-Depends: nala0 (= ${binary:Version})
+Depends: libnala0 (= ${binary:Version})
 Description: file/directory watcher library based on GLib (vala implementation) - development headers
  nala is a vala-written file/directory watcher library based on GLib.
  It permits to create simple file watchers in seconds, and provides a
@@ -25,7 +25,7 @@ Description: file/directory watcher library based on GLib (vala implementation) 
 Package: nala-vapi
 Section: devel
 Architecture: any
-Depends: nala0 (= ${binary:Version})
+Depends: libnala0 (= ${binary:Version})
 Description: file/directory watcher library based on GLib (vala implementation) - vapi files
  nala is a vala-written file/directory watcher library based on GLib.
  It permits to create simple file watchers in seconds, and provides a
@@ -36,8 +36,7 @@ Description: file/directory watcher library based on GLib (vala implementation) 
  .
  This package contains the vapi files for usage in other applications.
 
-
-Package: nala0
+Package: libnala0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -48,3 +47,10 @@ Description: file/directory watcher library based on GLib (vala implementation) 
  .
  If you are searching the pure python implementation of nala, go to the
  package python-nala.
+
+Package: nala0
+Section: libs
+Architecture: all
+Depends: libnala0 (= ${binary:Version})
+Description: dummy transitional package to libnala0
+ This package simply puts in place libnala0.
