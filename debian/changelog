@@ -1,3 +1,9 @@
+nala (1.0.3-5) unstable; urgency=medium
+
+  * nala-dev: install also the *.so library.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Tue, 15 Jul 2014 13:56:35 +0200
+
 nala (1.0.3-4) unstable; urgency=medium
 
   * As I am a shitty packager, I haven't properly
