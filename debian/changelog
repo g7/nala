@@ -1,3 +1,9 @@
+nala (1.0.3-6) unstable; urgency=medium
+
+  * libnala0: properly mark the conflict with the older nala0.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Sat, 19 Jul 2014 15:52:27 +0200
+
 nala (1.0.3-5) unstable; urgency=medium
 
   * nala-dev: install also the *.so library.
