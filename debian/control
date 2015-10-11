@@ -1,7 +1,7 @@
 Source: nala
 Priority: optional
 Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
-Build-Depends: bake, build-essential, valac-0.24, libgee-0.8-dev, libglib2.0-dev, debhelper (>= 8.0.0)
+Build-Depends: bake, build-essential, valac, libgee-0.8-dev, libglib2.0-dev, debhelper (>= 8.0.0)
 Standards-Version: 3.9.5
 Section: libs
 Homepage: https://github.com/g7/nala
