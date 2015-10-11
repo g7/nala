@@ -3,13 +3,13 @@ libraries.nala {
 	so-version = 0
 	compile-flags = -O2 -flto
 	link-flags = -flto -Wl,--as-needed,-soname,libnala.so.$(libraries.nala.so-version)
-	vala-packages = gio-2.0 gee-1.0
-	packages = gee-1.0 gio-2.0
+	vala-packages = gio-2.0 gee-0.8
+	packages = gee-0.8 gio-2.0
 }
 
 programs.nala-watcher {
 	sources = nala-watcher.vala
 	libraries = nala (local)
-	vala-packages = gio-2.0 gee-1.0
-	packages = gee-1.0 gio-2.0
+	vala-packages = gio-2.0 gee-0.8
+	packages = gee-0.8 gio-2.0
 }

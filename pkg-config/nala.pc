@@ -6,6 +6,6 @@ libdir=${exec_prefix}/lib
 Name: nala
 Description: Simple file watcher based on GLib
 Version: 1.0.3
-Requires: glib-2.0 gio-2.0
+Requires: glib-2.0 gio-2.0 gee-0.8
 Cflags: -I${includedir}
 Libs: -L${libdir} -lnala
