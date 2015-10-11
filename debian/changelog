@@ -1,3 +1,11 @@
+nala (1.0.4-1) unstable; urgency=medium
+
+  * [Recipe, pkg-config] Compile against libgee-0.8
+  * [packaging] Build-depend on libgee-0.8-dev, make the dev package depend on the correct headers
+  * [packaging] Build-depend on valac (0.30) instead of valac-0.24
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Sun, 11 Oct 2015 13:40:52 +0200
+
 nala (1.0.3-6) unstable; urgency=medium
 
   * libnala0: properly mark the conflict with the older nala0.
