@@ -1,7 +1,7 @@
 Source: nala
 Priority: optional
 Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
-Build-Depends: bake, build-essential, valac-0.24, libgee-dev, libglib2.0-dev, debhelper (>= 8.0.0)
+Build-Depends: bake, build-essential, valac-0.24, libgee-0.8-dev, libglib2.0-dev, debhelper (>= 8.0.0)
 Standards-Version: 3.9.5
 Section: libs
 Homepage: https://github.com/g7/nala
@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/g7/nala
 Package: nala-dev
 Section: libdevel
 Architecture: any
-Depends: libnala0 (= ${binary:Version})
+Depends: libnala0 (= ${binary:Version}), libgee-0.8-dev, libglib2.0-dev
 Description: file/directory watcher library based on GLib (vala implementation) - development headers
  nala is a vala-written file/directory watcher library based on GLib.
  It permits to create simple file watchers in seconds, and provides a
